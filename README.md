@@ -216,23 +216,38 @@ VRL_VALIDATOR_MODE=free
 
 ## Run Locally
 
-1. Create and activate a Python environment.
+1. Clone the repository and enter the project directory.
+
+```bash
+git clone https://github.com/vikramsh2002/VRL-Learning-Navigator.git
+cd VRL-Learning-Navigator
+```
+
+2. Create and activate a Python environment.
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-2. Install dependencies.
+3. Install dependencies.
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Start the app.
+4. Start the app from the project root.
 
 ```bash
 streamlit run app.py
+```
+
+`app.py` is the root launcher. The main application code lives at `src/vrl_learning_navigator/app.py`.
+
+You can also run the internal app file directly:
+
+```bash
+streamlit run src/vrl_learning_navigator/app.py
 ```
 
 The app will be available at:
