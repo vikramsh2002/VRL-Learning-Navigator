@@ -4,6 +4,12 @@ VRL Learning Navigator is a Streamlit web app for goal-based course discovery, l
 
 The project started as a course recommender, but it now behaves more like a learning guidance system. A learner can search manually, ask the local AI-style navigator for a learning path, compare similar courses, track completed courses, and practice at the right level.
 
+## UI Flow And UX Storyboard
+
+This single visual shows the complete learner journey across the app: goal entry, filters, learning bundle, course similarity, course actions, practice validation, catalog exploration, insights, and the offline backend flow.
+
+![VRL Learning Navigator UI flow and UX storyboard](documents/ui-flow-overview.png)
+
 ## What It Solves
 
 Online learners often know what they want to become, but not which course to start with or how to continue after finishing one course. This app helps by combining:
