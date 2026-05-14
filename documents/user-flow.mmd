@@ -1,0 +1,15 @@
+flowchart TD
+    A["Learner opens VRL Learning Navigator"] --> B["Choose manual filters"]
+    A --> C["Ask AI Learning Navigator"]
+    B --> D["Filtered course catalog"]
+    C --> D
+    D --> E["Learning bundle"]
+    D --> F["Course similarity matches"]
+    E --> G["Start here courses"]
+    E --> H["Practice next workspace"]
+    E --> I["Go deeper checks"]
+    F --> J["Similar course cards"]
+    G --> K["Open, save, or mark complete"]
+    H --> L["Validate practice"]
+    K --> M["Progress tracker updates learner level"]
+    M --> H

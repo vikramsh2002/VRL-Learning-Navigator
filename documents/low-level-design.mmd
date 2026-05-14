@@ -1,0 +1,24 @@
+flowchart TD
+    A["main"] --> B["load_courses"]
+    A --> C["load_recommendation_resources"]
+    A --> D["render_sidebar"]
+    D --> E["apply_filters"]
+    E --> F["render_header and metrics"]
+    F --> G["render_recommend_tab"]
+    F --> H["render_explore_tab"]
+    F --> I["render_shortlist_tab"]
+    F --> J["render_insights_tab"]
+
+    G --> K["render_advisor_chat"]
+    K --> L["submit_advisor_request"]
+    L --> M["recommend_for_goal"]
+    M --> N["add_advisor_context"]
+    N --> O["render_advisor_roadmap"]
+
+    G --> P["Course similarity selectbox"]
+    P --> Q["recommend_courses"]
+    Q --> R["render_course_grid"]
+
+    G --> S["render_progress_tracker"]
+    O --> T["Practice workspace"]
+    T --> U["validate_practice_attempt"]

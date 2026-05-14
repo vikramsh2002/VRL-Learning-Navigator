@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant User
+    participant UI as Streamlit UI
+    participant Filter as Filter Logic
+    participant Rec as Recommendation Engine
+    participant Data as Catalog and Index
+
+    User->>UI: Enter goal or select filters
+    UI->>Filter: Build active catalog scope
+    Filter->>Data: Read course metadata
+    Data-->>Filter: Filtered courses
+    UI->>Rec: Request recommendations
+    Rec->>Data: Use search text and TF-IDF vectors
+    Data-->>Rec: Ranked course matches
+    Rec-->>UI: Recommendations and reasons
+    UI-->>User: Course cards, bundle, practice tasks

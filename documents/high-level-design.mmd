@@ -1,0 +1,31 @@
+flowchart LR
+    subgraph UI["Streamlit UI"]
+        A["Sidebar filters"]
+        B["AI Learning Navigator"]
+        C["Course similarity"]
+        D["Progress and practice"]
+    end
+
+    subgraph Backend["Local backend logic"]
+        E["Catalog filtering"]
+        F["Goal interpreter"]
+        G["TF-IDF recommender"]
+        H["Practice validator"]
+    end
+
+    subgraph Data["Data and artifacts"]
+        I["data/course_details.csv"]
+        J["recommendation_index.joblib"]
+        K["Catalog refresh script"]
+    end
+
+    A --> E
+    B --> F
+    C --> G
+    D --> H
+    E --> I
+    F --> I
+    G --> J
+    H --> I
+    K --> I
+    K --> J
